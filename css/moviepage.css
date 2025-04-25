@@ -1,0 +1,333 @@
+body{
+    background: linear-gradient(to top, rgb(0, 0, 0), #000000,  rgba(0, 0, 0, 0.911));
+}
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to bottom, #3e295f, #492288,  rgba(0, 0, 0, 0.911));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensures navbar stays on top of other elements */
+}
+
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
+}
+
+/* Image Button Styles */
+.image-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.image-button img {
+    height: 30px; 
+    width: auto;  
+}
+
+/* Button Styles - From Uiverse.io by vinodjangid07 */
+.Btn {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+    background-color: rgba(255, 65, 65, 0);
+}
+
+/* Plus Sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+/* Text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+/* Hover Effects */
+.Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+/* Notification Button - From Uiverse.io by vinodjangid07 */
+.button {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(44, 44, 44, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.bell {
+    width: 18px;
+}
+
+.bell path {
+    fill: white;
+}
+
+.button:hover {
+    background-color: rgba(56, 56, 56, 0);
+}
+
+.button:hover .bell {
+    animation: bellRing 0.9s both;
+}
+
+/* Bell Ringing Animation */
+@keyframes bellRing {
+    0%, 100% {
+        transform-origin: top;
+    }
+    15% {
+        transform: rotateZ(10deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    45% {
+        transform: rotateZ(5deg);
+    }
+    60% {
+        transform: rotateZ(-5deg);
+    }
+    75% {
+        transform: rotateZ(2deg);
+    }
+}
+
+.button:active {
+    transform: scale(0.8);
+}
+
+/* Search Input - From Uiverse.io by boryanakrasteva */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #7e4fd400;
+    box-shadow: 0px 0px 3px #f3f3f300;
+    padding-right: 40px;
+    color: #fff;
+}
+
+.input::placeholder,
+.input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.input::placeholder {
+    color: #ffffff;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: .2s linear;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7e4fd400;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/* eto yung hover ng text sa navbar */
+.nav-item .nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover {
+    transform: scale(1.01);
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.image-button img {
+    height: 30px;
+    width: auto;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+} 
+@media (max-width: 575.98px) {
+    .card {
+       
+        max-width: 40%; 
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card {
+        
+        max-width: 70%; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+       
+        max-width: 80%; 
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+        
+        max-width: 80%; 
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .card {
+        
+        max-width: 60%; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        
+        max-width: 80%; 
+    }
+}
+.row {
+    padding: 10px;
+}
+
+.card-body {
+    text-align: center;
+    background-color: #2b2b2b;
+}
+
+.card {
+    border-color: #2b2b2b;
+}
+
+.card-body p {
+    color: #fff;
+}

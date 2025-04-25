@@ -1,0 +1,38 @@
+/* Background image styles */
+.bg-image {  
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    position: static; 
+}
+
+body{
+    background-image: url('/aurorabox/images/dc1.jpg'); 
+    height: 80vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+.success-box {
+    margin: 100px;
+}
+.login-directory {
+    color: #ae78ff;
+}
+.login-directory:hover {
+    color: #d5b9ff;
+}
+.container-success {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+}
+.checkboximg {
+    width: 100px;
+}
+

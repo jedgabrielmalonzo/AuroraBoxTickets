@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.account-container {
+  margin: 120px 50px 50px;
+  padding: 20px;
+  border-radius: 50px;
+  height: 70vh;
+  background-color: rgba(148, 148, 148, 0.2); /* Use RGBA for transparency */
+}
+
+/* Tabs Styles */
+.nav-tabs .nav-link.active {
+  background-color: #ffba00;
+  color: #2c003e;
+  border-color: #ffba00;
+}
+
+.text-center {
+  color: #fff;
+  font-weight: bold;
+}
+
+.form-label {
+  color: #fff;
+}
+
+input.form-control:disabled {
+  background-color: #8a8a8a !important; /* Override styles */
+  color: #000000 !important;
+  border-color: #adb5bd !important;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #ffba00;
+  color: #2c003e;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #e0a500;
+  color: #2c003e;
+}
+
+.btn-success {
+  background-color: #4e416e;
+  border: #2c003e;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #5632aa;
+  border: #2c003e;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Card Styles */
+.card-custom {
+  background-color: #827997;
+  border: 1px solid #adb5bd; /* Optional: Add a border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.alert {
+  margin-top: 15px; /* Spacing above alert */
+}
+
+/* Tickets Container */
+.tickets-container {
+  max-height: 400px; /* Set max height for the tickets section */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding: 10px;     /* Add some padding */
+  border: 1px solid #e0e0e0; /* Optional: Add a border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+  margin-top: 10px; /* Spacing above the tickets container */
+}

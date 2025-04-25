@@ -1,0 +1,211 @@
+body {
+    background-color: #20103a;
+    color: #52239e;
+}
+
+.main-content {
+    margin: 118px 150px 50px 150px;
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.img-poster {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 180px;
+    max-height: 250px;
+}
+
+.movie-poster {
+    display: flex;
+    justify-content: center; /* Center the poster */
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.title-text {
+    padding: 10px 20px;
+}
+
+.movie-information {
+    margin-bottom: 60px;
+}
+
+.movie-information p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.select-seats-text {
+    margin: 10px 0 5px 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+}
+
+.select-seats-text h2 {
+    font-weight: bold;
+}
+
+.select-seats p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.select-seats {
+    margin-top: 75px;
+    margin-left: -180px;
+}
+
+.box-availability,
+.box-availability1,
+.box-availability2 {
+    width: 20px;
+    height: 20px;
+}
+
+.box-availability {
+    background-color: #28a644;
+}
+
+.box-availability1 {
+    background-color: #bb1a1a;
+}
+
+.box-availability2 {
+    background-color: #fdb11d;
+}
+
+.box-indicators {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.screen {
+    font-size: 15px;
+    background-color: #ad8cdf;
+    text-align: center;
+    width: 90%; /* Full width */
+    max-width: 1000px; /* Limit max width */
+    margin: auto;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* SEATS */
+.seat {
+    width: calc((100% / 15) - 10px); /* 15 seats per row, accounting for margins */
+    height: 30px;
+    margin: 5px; /* Adjust margin for spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.seat.available:hover {
+    background-color: #5cb85c;
+}
+
+.seat.available {
+    background-color: #28a745;
+}
+
+.seat.selected {
+    background-color: #ffc107;
+}
+
+.seat.unavailable {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.seat-selection {
+    display: flex;
+    justify-content: center; /* Center the selection */
+    flex-wrap: wrap; /* Wrap seats in rows */
+    margin: 0 150px 0px 150px; /* Center the selection */
+    max-width: 90%; /* Limit width for responsiveness */
+}
+
+.ticket-selected-text {
+    text-align: left;
+    margin: 20px 5px 30px;
+    font-size: 20px;
+}
+
+.ticket-selected-text p {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+#confirm-button {
+    background-color: #ffad1f; /* Solid color */
+    color: rgb(12, 12, 12); /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Limit max width */
+    font-weight: bold;
+    display: block; /* Block display for centering */
+    float: right;
+}
+
+#confirm-button:hover {
+    background-color: #fbd07f; /* Hover color */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .select-seats-text {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .seat-selection {
+        margin: 0 10px; /* Adjust margin for seat selection */
+    }
+
+    /* No change to seat layout to keep 15 seats per row */
+}
+
+@media (max-width: 480px) {
+    .img-poster {
+        max-width: 150px; /* Reduce poster size */
+    }
+
+    .seat {
+        height: 25px; /* Adjust seat height */
+    }
+
+    .ticket-selected-text {
+        font-size: 16px; /* Reduce font size for small screens */
+    }
+}
+

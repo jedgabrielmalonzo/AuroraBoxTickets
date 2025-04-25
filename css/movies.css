@@ -1,0 +1,206 @@
+body{
+    background: linear-gradient(to top, rgb(0, 0, 0), #000000, rgba(0, 0, 0, 0.911));
+    margin: 0;
+    padding: 0;
+}
+
+.spacing {
+    margin-top: 100px;
+}
+
+.movies-text {
+    color: #fff;
+    margin-left: 60px;
+
+}
+
+.movies-text h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+/* Movie Card Styling */
+.movie-card-container {
+    margin: 50px;
+}
+.movie-card {
+    width: 100%;
+    max-width: 250px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #202020;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #202020;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for movie card */
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling inside the movie card */
+.movie-card img {
+    object-fit: cover;
+    height: 85%;
+    width: 100%;
+    border-bottom: 5px solid #FDB11D;
+}
+
+/* Content section in the movie card */
+.movie-card .card-body {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10%;
+}
+
+/* Title styling in the movie card */
+.movie-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Button styling in the movie card */
+.movie-card .btn {
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #fdb11d;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect for the button */
+.movie-card .btn:hover {
+    background-color: #fdb11d;
+}
+
+/* Modal content styling */
+.modal-content.custom-modal {
+    background-color: #202020;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Modal header styling */
+.modal-header {
+    border-bottom: none;
+    padding: 1rem 2rem;
+    background-color: #282828;
+    color: #fdb11d;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Close button styling in the modal */
+.modal-header .btn-close-custom {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for close button */
+.modal-header .btn-close-custom:hover {
+    transform: scale(1.2);
+    color: #fdb11d;
+}
+
+/* Modal body padding */
+.modal-body {
+    padding: 2rem;
+}
+
+/* Trailer iframe container styling */
+.trailer-container .iframe-container {
+    border: 5px solid #fdb11d;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Styling for the iframe element */
+.trailer-container iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    display: block;
+}
+
+/* Movie details section styling */
+.movie-details {
+    margin-top: 1.5rem;
+}
+
+/* Movie title styling in details */
+.movie-details h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Description paragraph styling */
+.movie-details p {
+    font-size: 1rem;
+    color: #c9c9c9;
+    margin-bottom: 0.5rem;
+}
+
+/* Buy ticket button styling */
+.movie-details a.btn-buy-ticket {
+    background-color: #fdb11d;
+    color: #202020;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover effect for buy ticket button */
+.movie-details a.btn-buy-ticket:hover {
+    background-color: #ffc94d;
+    color: #202020;
+}
+
+/* Modal close button adjustments */
+.modal-content .btn-close-custom {
+    color: #FDB11D;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for close button */
+.modal-content .btn-close-custom:hover {
+    transform: scale(1.2);
+}
+
+/* Trailer container spacing */
+.modal-content .trailer-container {
+    margin-top: 20px;
+}

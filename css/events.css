@@ -1,0 +1,603 @@
+body{
+    background: linear-gradient(to top, rgb(0, 0, 0), #000000,  rgba(0, 0, 0, 0.911));
+}
+
+/*promo*/
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    background-position: 0 -200px;    
+    
+}
+
+.promo-logo {
+    width: 100%; /* Change to 100% for responsiveness */
+    max-width: 300px; /* Maintain a max width */
+    height: 5vh; /* Maintain aspect ratio */
+    margin-top: 20%; 
+    margin-bottom: -60%;
+    padding: 0 10px; /* Add some padding for smaller screens */
+}
+
+
+.banner h1 {
+    font-size: 10vw; /* Use viewport width for responsive scaling */
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #3b2b5b;
+    margin-top: 20px;
+
+}
+
+/* Media Queries for Fine Tuning */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 6vw; /* Further adjust for very small screens */
+    }
+}
+
+.promo-text {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #3b2b5b;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 2px 2px #4c2a7b;
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.book-now-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: #0056b3;
+}
+
+/*christmas*/
+.christmas {
+    min-height: 100vh;
+    color: white;
+    padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.christmas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border: 5px solid #fff;
+}
+
+.title {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    color: #ffdd00; /* Golden yellow for a festive feel */
+    position: relative;
+}
+
+.title span {
+    display: block;
+    font-size: 80px;
+    margin-top: -20px;
+    color: #ff4d4d;  /* Red for emphasis */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.promo-date {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #f8e2d0;
+    font-style: italic;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 30px; /* Spacing between columns */
+    margin-top: 20px;
+}
+
+.service-column {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-column:hover {
+    transform: translateY(-10px); /* Lift up the column on hover */
+    box-shadow: 0 8px 30px rgba(255, 0, 119, 0.8); /* Pinkish glow */
+}
+
+.service-column h3 {
+    font-size: 26px;
+    color: #ff4d4d;  /* Red for headings */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-column p {
+    font-size: 18px;
+    color: #f8e2d0;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.decorative-line {
+    width: 50px;
+    height: 3px;
+    background-color: #ff4d4d;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+
+.decorative-line {
+    width: 50px;
+    height: 3px;
+    background-color: #ff4d4d;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/*happy birthday*/
+.happy {
+    background: url(../images/bday.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    color: white;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; /* Ensures the gif scales correctly */
+}
+
+.happy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay to make text readable */
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    border: 5px solid #ff0077;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #ff0077;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.title span {
+    display: block;
+    font-size: 60px;
+    margin-top: -10px;
+    color: #ffcc00;  /* Gold color for the word "SPECIAL" */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.servicesH {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-columnH {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-columnH:hover {
+    transform: translateY(-10px);  /* Lifts up the column on hover */
+    box-shadow: 0 8px 30px rgba(70, 44, 158, 0.8);  /* Pinkish glow */
+}
+
+.service-columnH h3 {
+    font-size: 30px;
+    color: #ff0077;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.service-columnH p {
+    font-size: 18px;
+    color: #f8e2d0;
+    line-height: 1.6;
+}
+
+.decorative-line1 {
+    width: 50px;
+    height: 3px;
+    background-color: #4c2a7b;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/*sunday*/
+.sunday {
+    background: url('sunday-bg.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 60px 20px;
+}
+
+.sunday::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);  /* Dark overlay for better readability */
+    pointer-events: none;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffdd00; /* Golden yellow for festive feel */
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    margin: 0 0 20px;
+}
+
+.discount-info {
+    font-size: 24px;
+    color: #f8e2d0;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 30px;
+}
+
+.service-columnS {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-columnS:hover {
+    transform: translateY(-10px); /* Lift up the column on hover */
+    box-shadow: 0 8px 30px rgba(70, 44, 158, 0.8); /* Pinkish glow */
+}
+
+.service-columnS h3 {
+    font-size: 26px;
+    color: #4c2a7b; /* Red for headings */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-columnS p {
+    font-size: 18px;
+    color: #f8e2d0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.service-image {
+    width: 100%; /* Ensures all images take up full width of the column */
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/*modal*/
+/* Promo Card Styling */
+.promo-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.promo-card {
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add bottom margin for spacing between cards */
+}
+
+.promo-card:hover .promo-box {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+}
+
+.promo-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+.promo-box h3 {
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.promo-box p {
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .promo-cards {
+        flex-direction: column; /* Stack cards vertically on medium screens */
+        align-items: center; /* Center align the cards */
+    }
+
+    .promo-card {
+        width: 80%; /* Make cards wider on medium screens */
+    }
+
+    .promo-box h3 {
+        font-size: 5.5vw; /* Adjusted for medium screens */
+    }
+
+    .promo-box p {
+        font-size: 4.5vw; /* Adjusted for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-box {
+        flex-direction: column; /* Ensure vertical stacking on small screens */
+    }
+
+    .promo-box h3 {
+        font-size: 8vw; /* Further adjusted for small screens */
+    }
+
+    .promo-box p {
+        font-size: 5.5vw; /* Further adjusted for small screens */
+    }
+}
+
+/* Modal Styling */
+.modal-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.modal-header .btn-close {
+    outline: none;
+}
+
+/* Ensure background colors inside modals stay cohesive */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-body p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.promo-card .promo-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust according to your design */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s ease;
+}
+
+.promo-card .promo-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 8px;
+}
+
+/* Darken image background on hover */
+.promo-box:hover {
+    filter: brightness(60%);
+}
+
+/* Add a transition effect for the text */
+.promo-card .promo-box h3, .promo-card .promo-box p {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal Box Styles (unchanged) */
+.modal-content {
+    background: linear-gradient(135deg, #000000, rgb(19, 14, 26) 100%);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Modal Header (unchanged) */
+.modal-header {
+    background: rgba(167, 124, 40, 0.8);
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+
+.modal-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.modal-body {
+    padding: 30px;
+    font-size: 1.1rem;
+    
+}
+
+.modal-body img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.modal-body .row {
+    margin-top: 20px;
+}
+
+
+.modal-body h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.modal-body p {
+    line-height: 1.6;
+}
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px;
+    object-fit: cover; 
+}

@@ -1,0 +1,226 @@
+
+body {
+    background-color: #20103a;
+    color: #52239e;
+    margin: 0;
+    padding: 0;
+}
+
+
+.order-summary h2 {
+    color: #52239e;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order-summary p, .order-summary ul {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.order-summary ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.order-summary .btn-primary {
+    background-color: #ffad1f; /* Solid blue color */
+    color: rgb(12, 12, 12); 
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.order-summary .btn-primary:hover {
+    background-color: #fbd07f; /* Darker blue on hover */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.text-danger {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+.main-content {
+    margin: 120px 160px 50px 150px;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+}
+
+.img-poster {
+    width: 170px;
+    max-height: 250px;
+}
+
+.movie-poster {
+    display: flex;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+.title-text {
+    padding: 10px 20px;
+}
+
+
+
+.movie-information p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.food-section {
+    margin: 0px 0px 0px 20px ;
+}
+.food-items {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.food-item {
+    text-align: center;
+    flex: 1 1 150px; 
+    margin: 10px;
+    padding: 9px;
+    background-color: #ff232300; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    min-width: 150px; 
+}
+
+
+.food-item:hover {
+    background-color: #edaae0; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+
+}
+
+
+.food-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+.food-item p {
+    font-size: 19px;
+    margin: 20px 0;
+    color: #20103a;
+}
+
+.food-item:last-child {
+    margin-bottom: 0;
+}
+
+.order-summary {
+    margin-top: 30px; 
+    position: relative; 
+    margin-left: 20px;
+}
+
+.order-details {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.order-summary .btn-primary {
+    display: block;
+    margin-left: auto; 
+    margin-top: 20px; 
+    width: max-content; 
+
+}
+
+hr {
+    border: 0;
+    border-top: 4px solid #8c489f; 
+    margin: 20px 0; 
+    width: 100%; 
+} 
+
+.add-ons {
+    margin-left: 150px;
+}
+.totalprice {
+    margin: 40px 0px 20px 0px;
+    background-color: #fbd07f;
+    width: fit-content;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.payment h3{
+    font-weight: bold;
+}
+
+.payment h5{
+    color: #000;
+}
+
+input[type="number"] {
+    width: 250px;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px; 
+    border: 3px solid #2b1e4e; 
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#confirm-button {
+    background-color: #ffad1f; /* Solid blue color */
+    color: rgb(12, 12, 12);               /* Text color */
+    border: none;               /* Remove default border */
+    padding: 10px 20px;         /* Padding for size */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+    width: 300px;
+    justify-content: center;
+    font-weight: bold;
+    float: right;
+
+}
+
+#confirm-button:hover {
+    background-color: #fbd07f; /* Darker blue on hover */
+    width: 300px;
+
+}

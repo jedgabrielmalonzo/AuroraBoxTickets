@@ -1,0 +1,229 @@
+/* Background image styles */
+.bg-image {
+    background-image: url('images/dc1.jpg'); 
+    height: 85vh; 
+    background-size: cover; 
+    background-position: center; 
+    position: static; 
+}
+
+
+/* Styles for text within the home section */
+.bg-image-home h1 {
+    color: white; /* Change text color if necessary */
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 2rem; /* Space below the heading */
+    font-weight: bold;
+}
+
+.bg-image-home {
+    background-image: url('images/home.png');
+    min-height: 50vh; /* Minimum height */
+    background-size: cover;
+    background-position: top;
+    overflow: hidden; /* Keep this to prevent overflow */
+    padding: 1rem; /* Add padding to the container */
+}
+
+/* Center the movie cards */
+.row.justify-content-center {
+    display: flex; /* Use flexbox to align cards */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the items */
+}
+.custom-shape-divider-top-1730016653 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1730016653 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 98px;
+}
+
+.custom-shape-divider-top-1730016653 .shape-fill {
+    fill: #6539a6;
+}
+
+.card {
+    display: flex; /* Flex layout for the card */
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: space-between; /* Evenly space content within the card */
+    height: 100%; /* Ensure the card takes full height */
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    
+}
+.card-img img {
+    box-shadow: 0px 4px 8px rgba(241, 241, 241, 0.3); /* Shadow effect */
+    border-radius: 15px; /* Rounded corners */
+    width: 100%; /* Ensure the image scales to the card width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media queries for specific breakpoints */
+@media (max-width: 576px) { /* Small screens (sm) */
+    .card {
+        width: 15rem; /* Smaller cards for small screens */
+    }
+}
+
+@media (min-width: 768px) { /* Medium screens (md) */
+    .card {
+        width: 15rem; /* Maintain moderate size for medium screens */
+    }
+}
+
+@media (min-width: 992px) { /* Large screens (lg) */
+    .card {
+        width: 15rem; /* Larger cards for large screens */
+    }
+}
+
+@media (min-width: 1200px) { /* Extra large screens (xl) */
+    .card {
+        width: 20rem; /* Minimized size for extra large screens */
+    }
+}
+
+@media (min-width: 1400px) { /* Extra extra large screens (xxl) */
+    .card {
+        width: 20rem; /* Slightly larger cards for extra extra large screens */
+    }
+}
+
+/* Center the movie cards */
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Media queries for specific breakpoints */
+@media (max-width: 576px) {
+    .card {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        width: 20rem;
+    }
+}
+@media (max-width: 992px) { /* Medium and smaller screens */
+    .navbar-brand img {
+        max-width: 120px; /* Reduce size on medium screens */
+    }
+}
+
+@media (max-width: 768px) { /* Small and smaller screens */
+    .navbar-brand img {
+        max-width: 100px; /* Further reduce on small screens */
+    }
+}
+
+@media (max-width: 576px) { /* Extra small screens */
+    .navbar-brand img {
+        max-width: 80px; /* Smallest size for extra small screens */
+    }
+}
+
+/* Landing page text styles */
+.landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.landing-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.landing-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Style for the Sign In button */
+#sign-in-btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #fdb11d;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fdb11d;
+    border-radius: 30px;
+}
+
+/* Style for the Get Started button */
+.btn-pill {
+    background-color: #fdb11d;
+    color: rgb(22, 22, 22);
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-pill:hover {
+    background-color: #f7d15e;
+}
+.card-title {
+    font-size: 1.5rem;  
+    font-weight: bold;  
+    color: #fdfdfd;     
+    text-transform: capitalize;  
+    margin-bottom: 0.5rem;  
+    text-align: center; 
+    letter-spacing: 1px;  
+    font-family: 'Arial', sans-serif;  
+}
+
+
+.card-title:hover {
+    color: #ffffff;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    cursor: pointer; 
+}

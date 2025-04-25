@@ -1,0 +1,166 @@
+body{
+    background: linear-gradient(to top, rgb(0, 0, 0), #000000, rgba(0, 0, 0, 0.911));
+    margin: 0;
+    padding-top: 70px;
+
+}
+
+/* Carousel Styling */
+
+.carousel {
+    margin-top: 80px; 
+    max-height: 80vh;
+
+}
+
+.carousel-item {
+    height: 100%; /* Full height for carousel items */
+}
+
+.carousel-item img {
+    height: 100%; /* Ensure the image covers the full height */
+    width: 100%; /* Ensure the image covers the full width */
+    object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+
+/* Cinema Text */
+.cinema-section {
+    margin: auto; /* Adds margin around the section */
+    margin-left: 40px;
+}
+
+.cinema-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+/* Row class with tighter gaps and centering */
+.row.g-1 {
+    margin: 0; 
+    justify-content: center; 
+    display: flex; 
+    align-items: center; 
+}
+
+/* General card styling */
+.cinema-card-container {
+    margin: 50px;
+}
+.cinema-card {
+    border: 1px solid #dddddd38;
+    background-color: rgba(255, 255, 255, 0.004);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content; 
+    width: 90%; 
+    max-height: 450px;
+    display: flex;  
+    flex-direction: column; 
+    margin: 10px; 
+}
+
+.cinema-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cinema-button {
+    margin-top: 10px;
+}
+.trailer-btn {
+    align-self: center;    
+    background-color: #ffc107;
+    color: #000000;
+    border: #ffc107;
+    font-weight: bold;
+    width: 220px;
+    padding: 10px;
+}
+/* Card content and poster styling remain unchanged */
+.header {
+    background-color: #ffffff11;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+}
+
+.movie-poster2 {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.movie-info h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.movie-info p {
+    margin: 3px;    
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+
+
+/* Trending movies section */
+.showing-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+}
+
+/* Center the movie cards */
+.row.justify-content-center {
+    display: flex; /* Use flexbox to align cards */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the items */
+    padding: 10px;
+}
+
+
+/* Snack Box Carousel */
+.container-foodbox {
+  display: flex;
+  justify-content: center; /* Centers the carousel horizontally */
+  align-items: center; /* Centers the carousel vertically */
+  height: 50vh; /* Desired height */
+  width: 50%; /* Desired width */
+  margin: 100px auto; /* Centers the container horizontally on the page */
+  margin-bottom: 200px;
+  padding: 0;
+  position: relative; /* Ensures centering works inside its parent container */
+}
+
+/* Ensure carousel images are responsive */
+.container-foodbox img {
+  object-fit: contain;
+  max-width: 100%; /* Prevents horizontal overflow */
+  max-height: 100%; /* Prevents vertical overflow */
+}
+

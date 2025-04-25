@@ -1,0 +1,151 @@
+body {
+    background-color: #20103a;
+    color: #52239e;
+}
+
+.main-content {
+    margin: 118px 150px 50px 150px;
+    background-color: #fff;
+    padding: 45px 45px 100px 45px;    
+    border-radius: 20px;
+}
+
+.img-poster {
+    width: 170px;
+    max-height: 250px;
+}
+
+.movie-poster {
+    display: flex;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+.title-text {
+    padding: 10px 20px;
+}
+
+
+
+.movie-information p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.food-section {
+    margin: 0px 0px 0px 20px ;
+}
+.food-items {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.food-item {
+    text-align: center;
+    flex: 1 1 150px; 
+    margin: 10px;
+    padding: 9px;
+    background-color: #ff232300; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    
+}
+
+
+.food-item:hover {
+    background-color: #edaae0; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+
+}
+
+
+.food-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+.food-item p {
+    font-size: 19px;
+    margin: 20px 0;
+    color: #20103a;
+}
+
+
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+.food-item:last-child {
+    margin-bottom: 0;
+}
+
+.order-summary {
+    margin-top: 30px; 
+    position: relative; 
+    margin-left: 20px;
+}
+
+.order-details {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.order-summary .btn-primary {
+    display: block;
+    margin-left: auto; 
+    margin-top: 20px; 
+    width: max-content; 
+
+}
+
+hr {
+    border: 0;
+    border-top: 4px solid #8c489f; 
+    margin: 20px 0; 
+    width: 100%; 
+} 
+
+.add-ons {
+    margin-left: 150px;
+}
+
+
+#confirm-button {
+    background-color: #ffad1f; /* Solid color */
+    color: rgb(12, 12, 12); /* Text color */
+    border: none; /* No border */
+    padding: 10px 30px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 250px; /* Limit max width */
+    font-weight: bold;
+    display: block; /* Block display for centering */
+    float: right;
+}
+
+#confirm-button:hover {
+    background-color: #fbd07f; /* Hover color */
+}

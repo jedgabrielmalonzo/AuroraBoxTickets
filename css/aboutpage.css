@@ -1,0 +1,197 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: #000000;
+}
+
+/* Basic Container Styling */
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Center the Content */
+.home__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Keeps the main content in the foreground */
+  text-align: center;
+}
+
+/* Background Text Styling */
+.home__background-text {
+    position: absolute;
+    top: -20%; /* Adjust this value to move it up or down */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Places this behind the main content */
+    opacity: 0; /* Start hidden */
+    animation: slideDown 2s ease-out forwards; /* Apply the downward slide animation */
+}
+
+.home__background-title {
+    font-size: 12rem; /* Increase the font size */
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.1); /* Faded white */
+    text-transform: uppercase;
+    pointer-events: none;
+
+    /* Gradient fade from bottom to middle */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Slide-in Animation for Content */
+.home__data {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1s ease-out 1s forwards; /* Delay fade-in */
+}
+
+/* Foreground Content Styling */
+.home__title-description {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.home__description {
+  font-size: 1.2rem;
+  color: #eee;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Slide-in Animation for Content */
+.home__data {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 1s ease-out 1s forwards; /* Delay fade-in */
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Downward Slide Animation for the 'ABOUT' text */
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* General styling for the Find Us page */
+.find-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    color: #ffffff; /* Text color */
+    position: relative; /* For absolute positioning of background */
+    overflow: hidden; /* Prevent overflow */
+}
+
+
+
+/* Container for content */
+.find-us__container {
+    display: flex;
+    max-width: 1200px; /* Max width for the content */
+    width: 100%;
+    z-index: 2; /* Keep content above background */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: slideUp 1s forwards ease-out; /* Animation for slide-up effect */
+    animation-delay: 0.5s; /* Delay to create sequential animation effect */
+}
+
+/* Keyframe for sliding up animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start below the container */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Text Section */
+.find-us__text {
+    flex: 1; /* Takes up half of the container */
+    padding: 2rem;
+    text-align: center; /* Center text within the text section */
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-20px); /* Start slightly to the left */
+    animation: fadeInLeft 1s forwards ease-out; /* Animation for fade-in and slide */
+    animation-delay: 1s; /* Delay to create sequential animation */
+}
+
+/* Keyframe for fade-in left animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); /* Start from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+.find-us__title {
+    padding-top: 125px;
+    font-size: 3rem; /* Title size */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.find-us__description {
+    font-size: 1.5rem; /* Description size */
+    line-height: 1.6;
+}
+
+/* Map Styling */
+.find-us__map {
+    flex: 1; /* Takes up half of the container */
+    padding: 2rem;
+    text-align: center; /* Center the map */
+    opacity: 0; /* Initially hidden */
+    transform: translateX(20px); /* Start slightly to the right */
+    animation: fadeInRight 1s forwards ease-out; /* Animation for fade-in and slide */
+    animation-delay: 1.5s; /* Delay to create sequential animation */
+}
+
+/* Keyframe for fade-in right animation */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px); /* Start from the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+/* Map Iframe Styling */
+iframe {
+    border-radius: 10px; /* Rounded corners on the map */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
